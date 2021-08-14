@@ -1,7 +1,7 @@
 const http = require("http");
-const express = reqire("express");
+// const express = reqire("./node_modules/express");
 
-const app = express()
+// const app = express();
 
 const port = process.env.PORT || 3000;
 
@@ -10,4 +10,4 @@ const server = http.createServer((req, res) => {
   res.end("Hi there! I'm your server and I'm responding on Heroku!");
 });
 
-server.listen(3000, "localhost");
+server.listen(port, "localhost");
