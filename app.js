@@ -10,4 +10,4 @@ const server = http.createServer((req, res) => {
   res.end("Hi there! I'm your server and I'm responding on Heroku-2!");
 });
 
-server.listen(port, "localhost");
+server.listen(port);
