@@ -8,7 +8,7 @@ app.use(logger('dev'));
 app.get("/", (req, res) => {
   const time = new Date();
   console.log(`${new Date().toLocaleString()} Request is made to ${req.url}`);
-  res.send("Hello World!");
+  res.json({"name": "bohdan"})
 });
 
 app.listen(port, () => {
