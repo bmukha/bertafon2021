@@ -19,8 +19,11 @@ bot.onSubscribe((response) => {
 });
 
 bot.onTextMessage(/./, (message, response) => {
-  say(response, message.text);
+  if (message.text === "fuck you") {
+    say(response, "go fuck yourself prick!");
+  } else {
+    say(response, message.text);
+  }
 });
 
-
-module.exports = {bot, say}
+module.exports = { bot, say };
