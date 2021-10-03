@@ -18,11 +18,7 @@
   "homepage": "https://github.com/bmukha/bertafon2021#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.12",
-    "request": "^2.88.2",
-    "viber-bot": "^1.0.18",
-    "winston": "^3.3.3",
-    "winston-console-formatter": "^1.0.0-beta.3"
+    "viber-bot": "^1.0.18"
   }
 }
