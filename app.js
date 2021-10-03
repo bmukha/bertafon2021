@@ -26,7 +26,7 @@ const bot = new ViberBot(logger, {
 if (process.env.NOW_URL || process.env.HEROKU_URL) {
   const http = require("http");
   const port = process.env.PORT || 8080;
-  
+
 
   http
     .createServer(bot.middleware())
@@ -85,5 +85,5 @@ function checkUrlAvailability(botResponse, urlToCheck) {
 }
 
 bot.onTextMessage(/./, (message, response) => {
-  checkUrlAvailability(response, message.text);
+  say(response, message.text);
 });
